@@ -58,6 +58,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 88)
@@ -66,6 +67,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox2.Location = New System.Drawing.Point(119, 12)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 88)
@@ -74,6 +76,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox3.Location = New System.Drawing.Point(225, 12)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 88)
@@ -82,6 +85,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox4
         '
+        Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox4.Location = New System.Drawing.Point(331, 12)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 88)
@@ -90,6 +94,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox5
         '
+        Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox5.Location = New System.Drawing.Point(12, 106)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(100, 88)
@@ -98,6 +103,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox6
         '
+        Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox6.Location = New System.Drawing.Point(119, 106)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(100, 88)
@@ -106,6 +112,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox7
         '
+        Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox7.Location = New System.Drawing.Point(225, 106)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(100, 88)
@@ -114,6 +121,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox8
         '
+        Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox8.Location = New System.Drawing.Point(331, 106)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(100, 88)
@@ -122,6 +130,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox9
         '
+        Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox9.Location = New System.Drawing.Point(12, 200)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(100, 88)
@@ -130,6 +139,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox10
         '
+        Me.PictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox10.Location = New System.Drawing.Point(118, 200)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(100, 88)
@@ -138,6 +148,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox11
         '
+        Me.PictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox11.Location = New System.Drawing.Point(225, 200)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(100, 88)
@@ -146,6 +157,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox12
         '
+        Me.PictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox12.Location = New System.Drawing.Point(331, 200)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(100, 88)
@@ -154,6 +166,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox13
         '
+        Me.PictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox13.Location = New System.Drawing.Point(12, 294)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(100, 88)
@@ -162,6 +175,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox14
         '
+        Me.PictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox14.Location = New System.Drawing.Point(119, 294)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(100, 88)
@@ -170,6 +184,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox15
         '
+        Me.PictureBox15.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox15.Location = New System.Drawing.Point(225, 294)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(100, 88)
@@ -178,6 +193,7 @@ Partial Class FrmGameDisplay
         '
         'PictureBox16
         '
+        Me.PictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox16.Location = New System.Drawing.Point(331, 294)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(100, 88)
@@ -188,7 +204,7 @@ Partial Class FrmGameDisplay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(449, 397)
         Me.Controls.Add(Me.PictureBox16)
         Me.Controls.Add(Me.PictureBox15)
         Me.Controls.Add(Me.PictureBox14)
