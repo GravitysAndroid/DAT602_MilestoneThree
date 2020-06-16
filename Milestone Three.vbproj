@@ -170,6 +170,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAdminWindow.resx">
+      <DependentUpon>FrmAdminWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGameConfirmation.resx">
+      <DependentUpon>FrmGameConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGameDisplay.resx">
       <DependentUpon>FrmGameDisplay.vb</DependentUpon>
     </EmbeddedResource>

@@ -74,7 +74,7 @@ Partial Class FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(182, 95)
+        Me.ClientSize = New System.Drawing.Size(248, 95)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(Me.TxtPassword)
         Me.Controls.Add(Me.TxtUsername)
