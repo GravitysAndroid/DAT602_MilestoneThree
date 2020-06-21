@@ -147,6 +147,12 @@
       <DependentUpon>FrmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmPlayerList.Designer.vb">
+      <DependentUpon>FrmPlayerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlayerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmRegister.Designer.vb">
       <DependentUpon>FrmRegister.vb</DependentUpon>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlayerList.resx">
+      <DependentUpon>FrmPlayerList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegister.resx">
       <DependentUpon>FrmRegister.vb</DependentUpon>

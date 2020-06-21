@@ -248,5 +248,6 @@ Public Class DataAccessClass
 
         Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "Call GetAllPlayers()", p.ToArray())
 
+        Return aDataSet
     End Function
 End Class
