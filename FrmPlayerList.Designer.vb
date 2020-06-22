@@ -26,6 +26,7 @@ Partial Class FrmPlayerList
         Me.BtnCancel = New System.Windows.Forms.Button()
         Me.MySqlDataAdapter1 = New MySql.Data.MySqlClient.MySqlDataAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.PlayerNameLabel = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,17 +57,29 @@ Partial Class FrmPlayerList
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(347, 207)
         Me.DataGridView1.TabIndex = 4
         '
+        'PlayerNameLabel
+        '
+        Me.PlayerNameLabel.AutoSize = True
+        Me.PlayerNameLabel.Location = New System.Drawing.Point(145, 229)
+        Me.PlayerNameLabel.Name = "PlayerNameLabel"
+        Me.PlayerNameLabel.Size = New System.Drawing.Size(67, 13)
+        Me.PlayerNameLabel.TabIndex = 5
+        Me.PlayerNameLabel.Text = "Player Name"
+        '
         'FrmPlayerList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(372, 254)
+        Me.Controls.Add(Me.PlayerNameLabel)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.BtnJoin)
@@ -74,10 +87,12 @@ Partial Class FrmPlayerList
         Me.Text = "FrmPlayerList"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BtnJoin As Button
     Friend WithEvents BtnCancel As Button
     Friend WithEvents MySqlDataAdapter1 As MySql.Data.MySqlClient.MySqlDataAdapter
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents PlayerNameLabel As Label
 End Class

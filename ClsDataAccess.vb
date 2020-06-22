@@ -9,6 +9,8 @@ Imports MySql.Data.MySqlClient
 Public Class DataAccessClass
     Dim connectionString As String = "Server=localhost;Port=3306;Database=hwdb;Uid=root;password=P@ssword1;"
     Dim mySqlConnection As MySqlConnection = New MySqlConnection(connectionString)
+    Public Shared playerName As String
+    Public Shared playerEditName As String
 
     'Player Self Delete
     Public Function PlayerSelfDelete(pPlayerID As Int32) As DataSet
@@ -250,4 +252,37 @@ Public Class DataAccessClass
 
         Return aDataSet
     End Function
+End Class
+
+Public Class PlayerClass
+    ' 	SELECT `NAME`, `ROW` , `COLUMN`
+    Private _name As String
+    Private _Row, _Col As Integer
+
+    Public Property Name As String
+        Get
+            Return _name
+        End Get
+        Set(value As String)
+            _name = value
+        End Set
+    End Property
+
+    Public Property Row As Integer
+        Get
+            Return _Row
+        End Get
+        Set(value As Integer)
+            _Row = value
+        End Set
+    End Property
+
+    Public Property Col As Integer
+        Get
+            Return _Col
+        End Get
+        Set(value As Integer)
+            _Col = value
+        End Set
+    End Property
 End Class

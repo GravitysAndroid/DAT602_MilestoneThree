@@ -15,6 +15,7 @@
             lcLoginMessage = aRow("Message")
         Next
         If (lcLoginMessage = "Login Successful") Then
+            DataAccessClass.playerName = Me.TxtUsername.Text
             MessageBox.Show("Login Successful")
             FrmGameDisplay.Show()
             Me.Hide()
