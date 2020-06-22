@@ -1,6 +1,7 @@
 ﻿Public Class FrmPlayerList
     Private mPlayerEditID As String
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick, DataGridView1.CellDoubleClick, DataGridView1.CellContentDoubleClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick,
+    DataGridView1.CellDoubleClick, DataGridView1.CellContentDoubleClick
         mPlayerEditID = DataGridView1.Rows(e.RowIndex).Cells(0).Value
         'mPlayerEditID = DataGridView1.SelectedCells(0).Value
         DataAccessClass.playerEditName = mPlayerEditID
