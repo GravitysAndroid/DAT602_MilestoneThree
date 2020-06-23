@@ -33,7 +33,7 @@ Public Class FrmGameDisplay
 
         ds = da.GetAllPlayers()
         For Each row In ds.Tables(0).Rows
-            DrawPlayerAt(row("NAME"), row("ROW"), row("COLUMN"))
+            DrawPlayerAt(row("PlayerName"), row("TileID"), row("GameID"))
         Next
     End Sub
 

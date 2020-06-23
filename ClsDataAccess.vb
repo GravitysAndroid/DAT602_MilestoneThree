@@ -12,6 +12,7 @@ Public Class DataAccessClass
     Public Shared playerName As String
     Public Shared playerEditName As String
     Public Shared PlayerEmail As String
+    Public Shared GameID As Integer
 
     'Player Self Delete
     Public Function PlayerSelfDelete(pPlayerID As Int32) As DataSet

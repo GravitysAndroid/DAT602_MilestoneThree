@@ -35,4 +35,8 @@
         PlayerNameLabel.Text = DataAccessClass.playerName
         ShowCurrentPlayers()
     End Sub
+
+    Private Sub BtnAdminPanel_Click(sender As Object, e As EventArgs) Handles BtnAdminPanel.Click
+        FrmAdminWindow.Show()
+    End Sub
 End Class

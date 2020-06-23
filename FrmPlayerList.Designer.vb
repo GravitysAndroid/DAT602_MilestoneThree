@@ -27,6 +27,7 @@ Partial Class FrmPlayerList
         Me.MySqlDataAdapter1 = New MySql.Data.MySqlClient.MySqlDataAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.PlayerNameLabel = New System.Windows.Forms.Label()
+        Me.BtnAdminPanel = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,17 +69,27 @@ Partial Class FrmPlayerList
         'PlayerNameLabel
         '
         Me.PlayerNameLabel.AutoSize = True
-        Me.PlayerNameLabel.Location = New System.Drawing.Point(145, 229)
+        Me.PlayerNameLabel.Location = New System.Drawing.Point(93, 231)
         Me.PlayerNameLabel.Name = "PlayerNameLabel"
         Me.PlayerNameLabel.Size = New System.Drawing.Size(67, 13)
         Me.PlayerNameLabel.TabIndex = 5
         Me.PlayerNameLabel.Text = "Player Name"
+        '
+        'BtnAdminPanel
+        '
+        Me.BtnAdminPanel.Location = New System.Drawing.Point(203, 225)
+        Me.BtnAdminPanel.Name = "BtnAdminPanel"
+        Me.BtnAdminPanel.Size = New System.Drawing.Size(75, 23)
+        Me.BtnAdminPanel.TabIndex = 6
+        Me.BtnAdminPanel.Text = "Admin Panel"
+        Me.BtnAdminPanel.UseVisualStyleBackColor = True
         '
         'FrmPlayerList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(372, 254)
+        Me.Controls.Add(Me.BtnAdminPanel)
         Me.Controls.Add(Me.PlayerNameLabel)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnCancel)
@@ -95,4 +106,5 @@ Partial Class FrmPlayerList
     Friend WithEvents MySqlDataAdapter1 As MySql.Data.MySqlClient.MySqlDataAdapter
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents PlayerNameLabel As Label
+    Friend WithEvents BtnAdminPanel As Button
 End Class
