@@ -197,6 +197,7 @@ Partial Class FrmGameDisplay
         Me.PictureBox16.Location = New System.Drawing.Point(331, 294)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(100, 88)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox16.TabIndex = 15
         Me.PictureBox16.TabStop = False
         '

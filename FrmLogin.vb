@@ -17,7 +17,7 @@
         If (lcLoginMessage = "Login Successful") Then
             DataAccessClass.playerName = Me.TxtUsername.Text
             MessageBox.Show("Login Successful")
-            FrmGameDisplay.Show()
+            FrmPlayerList.Show()
             Me.Hide()
         Else
             MessageBox.Show("Login Failed")

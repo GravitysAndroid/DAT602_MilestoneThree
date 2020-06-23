@@ -21,9 +21,9 @@
         For Each row In ds.Tables(0).Rows
             lcPlayer = New PlayerClass()
             With lcPlayer
-                .Name = row("Name")
+                .PlayerName = row("PlayerName")
                 .Row = row("Row")
-                .Col = row("Column")
+                .Column = row("Column")
             End With
             lcPlayers.Add(lcPlayer)
         Next

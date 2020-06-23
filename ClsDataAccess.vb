@@ -258,15 +258,15 @@ End Class
 
 Public Class PlayerClass
     ' 	SELECT `NAME`, `ROW` , `COLUMN`
-    Private _name As String
-    Private _Row, _Col As Integer
+    Private _PlayerName As String
+    Private _Row, _Column As Integer
 
-    Public Property Name As String
+    Public Property PlayerName As String
         Get
-            Return _name
+            Return _PlayerName
         End Get
         Set(value As String)
-            _name = value
+            _PlayerName = value
         End Set
     End Property
 
@@ -279,12 +279,12 @@ Public Class PlayerClass
         End Set
     End Property
 
-    Public Property Col As Integer
+    Public Property Column As Integer
         Get
-            Return _Col
+            Return _Column
         End Get
         Set(value As Integer)
-            _Col = value
+            _Column = value
         End Set
     End Property
 End Class
