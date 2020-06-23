@@ -23,9 +23,9 @@ Partial Class FrmRegister
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LblUsername = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TxtUserName = New System.Windows.Forms.TextBox()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
+        Me.TxtEmail = New System.Windows.Forms.TextBox()
         Me.LblPassword = New System.Windows.Forms.Label()
         Me.LblEmail = New System.Windows.Forms.Label()
         Me.BtnRegister = New System.Windows.Forms.Button()
@@ -40,26 +40,26 @@ Partial Class FrmRegister
         Me.LblUsername.TabIndex = 0
         Me.LblUsername.Text = "Username"
         '
-        'TextBox1
+        'TxtUserName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(77, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TxtUserName.Location = New System.Drawing.Point(77, 13)
+        Me.TxtUserName.Name = "TxtUserName"
+        Me.TxtUserName.Size = New System.Drawing.Size(100, 20)
+        Me.TxtUserName.TabIndex = 1
         '
-        'TextBox2
+        'TxtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(77, 40)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.TxtPassword.Location = New System.Drawing.Point(77, 40)
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPassword.TabIndex = 2
         '
-        'TextBox3
+        'TxtEmail
         '
-        Me.TextBox3.Location = New System.Drawing.Point(77, 67)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 3
+        Me.TxtEmail.Location = New System.Drawing.Point(77, 67)
+        Me.TxtEmail.Name = "TxtEmail"
+        Me.TxtEmail.Size = New System.Drawing.Size(100, 20)
+        Me.TxtEmail.TabIndex = 3
         '
         'LblPassword
         '
@@ -96,9 +96,9 @@ Partial Class FrmRegister
         Me.Controls.Add(Me.BtnRegister)
         Me.Controls.Add(Me.LblEmail)
         Me.Controls.Add(Me.LblPassword)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtEmail)
+        Me.Controls.Add(Me.TxtPassword)
+        Me.Controls.Add(Me.TxtUserName)
         Me.Controls.Add(Me.LblUsername)
         Me.Name = "FrmRegister"
         Me.Text = "FrmRegister"
@@ -108,9 +108,9 @@ Partial Class FrmRegister
     End Sub
 
     Friend WithEvents LblUsername As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TxtUserName As TextBox
+    Friend WithEvents TxtPassword As TextBox
+    Friend WithEvents TxtEmail As TextBox
     Friend WithEvents LblPassword As Label
     Friend WithEvents LblEmail As Label
     Friend WithEvents BtnRegister As Button

@@ -27,6 +27,7 @@ Partial Class FrmLogin
         Me.TxtUsername = New System.Windows.Forms.TextBox()
         Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.BtnLogin = New System.Windows.Forms.Button()
+        Me.BtnRegister = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblUsername
@@ -63,18 +64,28 @@ Partial Class FrmLogin
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(97, 64)
+        Me.BtnLogin.Location = New System.Drawing.Point(12, 64)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(75, 23)
         Me.BtnLogin.TabIndex = 4
         Me.BtnLogin.Text = "Login"
         Me.BtnLogin.UseVisualStyleBackColor = True
         '
+        'BtnRegister
+        '
+        Me.BtnRegister.Location = New System.Drawing.Point(161, 63)
+        Me.BtnRegister.Name = "BtnRegister"
+        Me.BtnRegister.Size = New System.Drawing.Size(75, 23)
+        Me.BtnRegister.TabIndex = 5
+        Me.BtnRegister.Text = "Register"
+        Me.BtnRegister.UseVisualStyleBackColor = True
+        '
         'FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(248, 95)
+        Me.Controls.Add(Me.BtnRegister)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(Me.TxtPassword)
         Me.Controls.Add(Me.TxtUsername)
@@ -92,4 +103,5 @@ Partial Class FrmLogin
     Friend WithEvents TxtUsername As TextBox
     Friend WithEvents TxtPassword As TextBox
     Friend WithEvents BtnLogin As Button
+    Friend WithEvents BtnRegister As Button
 End Class

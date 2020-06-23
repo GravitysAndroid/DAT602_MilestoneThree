@@ -11,6 +11,7 @@ Public Class DataAccessClass
     Dim mySqlConnection As MySqlConnection = New MySqlConnection(connectionString)
     Public Shared playerName As String
     Public Shared playerEditName As String
+    Public Shared PlayerEmail As String
 
     'Player Self Delete
     Public Function PlayerSelfDelete(pPlayerID As Int32) As DataSet
