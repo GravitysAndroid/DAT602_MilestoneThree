@@ -24,8 +24,6 @@
             FrmRegister.Show()
             Me.Hide()
         End If
-
-
     End Sub
 
     Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click

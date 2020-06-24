@@ -42,9 +42,17 @@ Public Class FrmGameDisplay
         aPicture = lcPictureBoxes(pRow, pColumn)
 
         If (pName = "John") Then
-            aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
+            'FOR LAPTOP
+            'aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
+
+            'FOR PC
+            aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
         ElseIf (pName = "Jim") Then
-            aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
+            'FOR LAPTOP
+            'aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
+
+            'FOR PC
+            aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
         Else
             'default image
         End If
@@ -54,5 +62,36 @@ Public Class FrmGameDisplay
     Private Sub FrmGameDisplay_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         putPictureBoxesIntoAnArray()
         DrawCurrentPlayers()
+    End Sub
+
+    Private Sub BtnMove_Click(sender As Object, e As EventArgs) Handles BtnMove.Click
+        Dim DA As DataAccessClass
+        Dim DS As DataSet
+        Dim lcPlayerID As Integer
+        Dim lcRow As Integer
+        Dim lcColumn As Integer
+        Dim lcMoveMessage As String = ""
+
+        lcRow = lcRow + 1
+        lcColumn = lcColumn + 1
+        DataAccessClass.PlayerID = Convert.ToDecimal(Me.TxtPlayerID.Text)
+        lcPlayerID = DataAccessClass.PlayerID
+
+        DA = New DataAccessClass()
+        DS = New DataSet()
+
+        DS = DA.Move(lcPlayerID, lcRow, lcColumn)
+
+        For Each aRow As DataRow In DS.Tables(0).Rows
+            lcMoveMessage = aRow("Message")
+        Next
+
+        If (lcMoveMessage = "Player Moved") Then
+            MessageBox.Show("Player Moved")
+            putPictureBoxesIntoAnArray()
+            DrawCurrentPlayers()
+        Else
+            MessageBox.Show("Move Failed")
+        End If
     End Sub
 End Class

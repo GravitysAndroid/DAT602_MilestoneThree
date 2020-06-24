@@ -39,4 +39,30 @@
     Private Sub BtnAdminPanel_Click(sender As Object, e As EventArgs) Handles BtnAdminPanel.Click
         FrmAdminWindow.Show()
     End Sub
+
+    Private Sub BtnJoin_Click(sender As Object, e As EventArgs) Handles BtnJoin.Click
+        Dim DA As DataAccessClass
+        Dim DS As DataSet
+        Dim lcLoginMessage As String = ""
+        Dim lcPlayerID As Int32
+        Dim lcGameID As Int32
+
+        DA = New DataAccessClass()
+        DS = New DataSet()
+
+        DS = DA.GameConfirmation(lcPlayerID, lcGameID)
+
+        For Each aRow As DataRow In DS.Tables(0).Rows
+            lcLoginMessage = aRow("Message")
+        Next
+
+        If (lcLoginMessage = "Game Confirmed") Then
+            'DataAccessClass.playerName = lcPlayerID
+            MessageBox.Show("Game Confirmed")
+            FrmGameDisplay.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Game Failed To Join")
+        End If
+    End Sub
 End Class

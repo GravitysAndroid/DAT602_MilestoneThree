@@ -38,6 +38,8 @@ Partial Class FrmGameDisplay
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.BtnMove = New System.Windows.Forms.Button()
+        Me.TxtPlayerID = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -201,11 +203,29 @@ Partial Class FrmGameDisplay
         Me.PictureBox16.TabIndex = 15
         Me.PictureBox16.TabStop = False
         '
+        'BtnMove
+        '
+        Me.BtnMove.Location = New System.Drawing.Point(12, 388)
+        Me.BtnMove.Name = "BtnMove"
+        Me.BtnMove.Size = New System.Drawing.Size(75, 23)
+        Me.BtnMove.TabIndex = 16
+        Me.BtnMove.Text = "Move"
+        Me.BtnMove.UseVisualStyleBackColor = True
+        '
+        'TxtPlayerID
+        '
+        Me.TxtPlayerID.Location = New System.Drawing.Point(337, 391)
+        Me.TxtPlayerID.Name = "TxtPlayerID"
+        Me.TxtPlayerID.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPlayerID.TabIndex = 17
+        '
         'FrmGameDisplay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(449, 397)
+        Me.ClientSize = New System.Drawing.Size(449, 423)
+        Me.Controls.Add(Me.TxtPlayerID)
+        Me.Controls.Add(Me.BtnMove)
         Me.Controls.Add(Me.PictureBox16)
         Me.Controls.Add(Me.PictureBox15)
         Me.Controls.Add(Me.PictureBox14)
@@ -241,6 +261,7 @@ Partial Class FrmGameDisplay
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -260,4 +281,6 @@ Partial Class FrmGameDisplay
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
+    Friend WithEvents BtnMove As Button
+    Friend WithEvents TxtPlayerID As TextBox
 End Class

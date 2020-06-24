@@ -13,6 +13,7 @@ Public Class DataAccessClass
     Public Shared playerEditName As String
     Public Shared PlayerEmail As String
     Public Shared GameID As Integer
+    Public Shared PlayerID As Integer
 
     'Player Self Delete
     Public Function PlayerSelfDelete(pPlayerID As Int32) As DataSet
@@ -28,18 +29,22 @@ Public Class DataAccessClass
     End Function
 
     'Move
-    Public Function Move(pPlayerID As Int32, pTileID As Int32) As DataSet
+    Public Function Move(pPlayerID As Int32, pRow As Int32, pColumn As Int32) As DataSet
         Dim p As List(Of MySqlParameter) = New List(Of MySqlParameter)()
         Dim aPlayerID As MySqlParameter = New MySqlParameter("@PlayerID", MySqlDbType.Int32)
-        Dim aTileID As MySqlParameter = New MySqlParameter("@TileID", MySqlDbType.Int32)
+        Dim aRow As MySqlParameter = New MySqlParameter("@Row", MySqlDbType.Int32)
+        Dim aColumn As MySqlParameter = New MySqlParameter("@Column", MySqlDbType.Int32)
 
         aPlayerID.Value = pPlayerID
         p.Add(aPlayerID)
 
-        aTileID.Value = pTileID
-        p.Add(aTileID)
+        aRow.Value = pRow
+        p.Add(aRow)
 
-        Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "Move(@PlayerID,@TileID)", p.ToArray())
+        aColumn.Value = pColumn
+        p.Add(aColumn)
+
+        Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "Move(@PlayerID,@Row, @Column)", p.ToArray())
 
         Return aDataSet
     End Function
@@ -62,19 +67,19 @@ Public Class DataAccessClass
     End Function
 
     'Test Play
-    'Public Function TestPlay(pNumberOfPlayers As String) As DataSet
-    '    Dim p As List(Of MySqlParameter) = New List(Of MySqlParameter)()
-    '    Dim aP As MySqlParameter = New MySqlParameter("@NumberOfPlayers", MySqlDbType.VarChar, 50)
+    Public Function TestPlay(pNumberOfPlayers As String) As DataSet
+        Dim p As List(Of MySqlParameter) = New List(Of MySqlParameter)()
+        Dim aP As MySqlParameter = New MySqlParameter("@NumberOfPlayers", MySqlDbType.VarChar, 50)
 
-    '    aP.Value = pNumberOfPlayers
-    '    p.Add(aP)
+        aP.Value = pNumberOfPlayers
+        p.Add(aP)
 
-    '    Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "TestPlay(@NumberOfPlayers)", p.ToArray())
+        Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "TestPlay(@NumberOfPlayers)", p.ToArray())
 
-    '    Return aDataSet
-    'End Function
+        Return aDataSet
+    End Function
 
-    'Add Player Name
+    'Add player Name
     Public Function AddPlayerName(pPlayerName As String, pPassword As String, pEmail As String) As DataSet
         Dim p As List(Of MySqlParameter) = New List(Of MySqlParameter)()
         Dim aPlayerName As MySqlParameter = New MySqlParameter("@PlayerName", MySqlDbType.VarChar, 25)
