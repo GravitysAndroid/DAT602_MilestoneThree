@@ -72,13 +72,12 @@ Public Class FrmGameDisplay
         Dim lcColumn As Integer
         Dim lcMoveMessage As String = ""
 
-        lcRow = lcRow + 1
-        lcColumn = lcColumn + 1
-        DataAccessClass.PlayerID = Convert.ToDecimal(Me.TxtPlayerID.Text)
-        lcPlayerID = DataAccessClass.PlayerID
-
         DA = New DataAccessClass()
         DS = New DataSet()
+
+        lcRow = lcRow + 1
+        lcColumn = lcColumn + 1
+        lcPlayerID = DataAccessClass.PlayerID
 
         DS = DA.Move(lcPlayerID, lcRow, lcColumn)
 

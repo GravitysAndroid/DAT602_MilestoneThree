@@ -11,15 +11,15 @@
     Private Sub ShowCurrentPlayers()
         Dim da As DataAccessClass
         Dim ds As DataSet
-        Dim lcPlayers As List(Of PlayerClass)
-        Dim lcPlayer As PlayerClass
-        lcPlayers = New List(Of PlayerClass)
+        Dim lcPlayers As List(Of MoveClass)
+        Dim lcPlayer As MoveClass
+        lcPlayers = New List(Of MoveClass)
 
         da = New DataAccessClass()
 
         ds = da.GetAllPlayers()
         For Each row In ds.Tables(0).Rows
-            lcPlayer = New PlayerClass()
+            lcPlayer = New MoveClass()
             With lcPlayer
                 .PlayerName = row("PlayerName")
                 .Row = row("Row")

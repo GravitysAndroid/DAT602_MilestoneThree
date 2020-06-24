@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmGameDisplay
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmGameDisplay
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -39,7 +39,6 @@ Partial Class FrmGameDisplay
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.BtnMove = New System.Windows.Forms.Button()
-        Me.TxtPlayerID = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -212,19 +211,11 @@ Partial Class FrmGameDisplay
         Me.BtnMove.Text = "Move"
         Me.BtnMove.UseVisualStyleBackColor = True
         '
-        'TxtPlayerID
-        '
-        Me.TxtPlayerID.Location = New System.Drawing.Point(337, 391)
-        Me.TxtPlayerID.Name = "TxtPlayerID"
-        Me.TxtPlayerID.Size = New System.Drawing.Size(100, 20)
-        Me.TxtPlayerID.TabIndex = 17
-        '
         'FrmGameDisplay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(449, 423)
-        Me.Controls.Add(Me.TxtPlayerID)
         Me.Controls.Add(Me.BtnMove)
         Me.Controls.Add(Me.PictureBox16)
         Me.Controls.Add(Me.PictureBox15)
@@ -261,7 +252,6 @@ Partial Class FrmGameDisplay
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -282,5 +272,4 @@ Partial Class FrmGameDisplay
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents BtnMove As Button
-    Friend WithEvents TxtPlayerID As TextBox
 End Class

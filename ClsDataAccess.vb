@@ -261,7 +261,7 @@ Public Class DataAccessClass
     End Function
 End Class
 
-Public Class PlayerClass
+Public Class MoveClass
     ' 	SELECT `NAME`, `ROW` , `COLUMN`
     Private _PlayerName As String
     Private _Row, _Column As Integer
