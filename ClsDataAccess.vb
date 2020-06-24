@@ -44,7 +44,7 @@ Public Class DataAccessClass
         aColumn.Value = pColumn
         p.Add(aColumn)
 
-        Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "Move(@PlayerID,@Row, @Column)", p.ToArray())
+        Dim aDataSet = MySqlHelper.ExecuteDataset(mySqlConnection, "call Move(@PlayerID,@Row, @Column)", p.ToArray())
 
         Return aDataSet
     End Function

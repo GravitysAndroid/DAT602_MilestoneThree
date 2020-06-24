@@ -4,6 +4,7 @@
         Dim DS As DataSet
         Dim lcUsername As String = TxtUsername.Text
         Dim lcPassword As String = TxtPassword.Text
+        Dim lcPlayerID As Integer
         Dim lcLoginMessage As String = ""
 
         DA = New DataAccessClass()
@@ -13,8 +14,10 @@
 
         For Each aRow As DataRow In DS.Tables(0).Rows
             lcLoginMessage = aRow("Message")
+            lcPlayerID = aRow("PlayerID")
         Next
         If (lcLoginMessage = "Login Successful") Then
+            DataAccessClass.PlayerID = lcPlayerID
             DataAccessClass.playerName = Me.TxtUsername.Text
             MessageBox.Show("Login Successful")
             FrmPlayerList.Show()

@@ -43,16 +43,16 @@ Public Class FrmGameDisplay
 
         If (pName = "John") Then
             'FOR LAPTOP
-            'aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
+            aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
 
             'FOR PC
-            aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
+            'aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Archer.jpg")
         ElseIf (pName = "Jim") Then
             'FOR LAPTOP
-            'aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
+            aPicture.Image = Image.FromFile("C:\Users\hayde\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
 
             'FOR PC
-            aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
+            'aPicture.Image = Image.FromFile("C:\Users\Hayden Williams\source\repos\DAT602_MilestoneThree\Resources\Mage.png")
         Else
             'default image
         End If
