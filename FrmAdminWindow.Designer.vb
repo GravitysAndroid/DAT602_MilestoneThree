@@ -29,6 +29,8 @@ Partial Class FrmAdminWindow
         Me.TxtDeleteGame = New System.Windows.Forms.TextBox()
         Me.TxtDeletePlayer = New System.Windows.Forms.TextBox()
         Me.BtnOK = New System.Windows.Forms.Button()
+        Me.TxtUpdateFrom = New System.Windows.Forms.TextBox()
+        Me.TxtUpdateTo = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'BtnDelete
@@ -90,11 +92,27 @@ Partial Class FrmAdminWindow
         Me.BtnOK.Text = "OK"
         Me.BtnOK.UseVisualStyleBackColor = True
         '
+        'TxtUpdateFrom
+        '
+        Me.TxtUpdateFrom.Location = New System.Drawing.Point(133, 72)
+        Me.TxtUpdateFrom.Name = "TxtUpdateFrom"
+        Me.TxtUpdateFrom.Size = New System.Drawing.Size(100, 20)
+        Me.TxtUpdateFrom.TabIndex = 13
+        '
+        'TxtUpdateTo
+        '
+        Me.TxtUpdateTo.Location = New System.Drawing.Point(240, 71)
+        Me.TxtUpdateTo.Name = "TxtUpdateTo"
+        Me.TxtUpdateTo.Size = New System.Drawing.Size(100, 20)
+        Me.TxtUpdateTo.TabIndex = 14
+        '
         'FrmAdminWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(251, 197)
+        Me.ClientSize = New System.Drawing.Size(347, 197)
+        Me.Controls.Add(Me.TxtUpdateTo)
+        Me.Controls.Add(Me.TxtUpdateFrom)
         Me.Controls.Add(Me.BtnOK)
         Me.Controls.Add(Me.TxtDeletePlayer)
         Me.Controls.Add(Me.TxtDeleteGame)
@@ -116,4 +134,6 @@ Partial Class FrmAdminWindow
     Friend WithEvents TxtDeleteGame As TextBox
     Friend WithEvents TxtDeletePlayer As TextBox
     Friend WithEvents BtnOK As Button
+    Friend WithEvents TxtUpdateFrom As TextBox
+    Friend WithEvents TxtUpdateTo As TextBox
 End Class
