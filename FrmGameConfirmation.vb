@@ -3,9 +3,6 @@
     Dim DS As DataSet
 
     Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
-        DA = New DataAccessClass()
-        DS = New DataSet()
-
         FrmPlayerList.Show()
         Me.Close()
     End Sub
