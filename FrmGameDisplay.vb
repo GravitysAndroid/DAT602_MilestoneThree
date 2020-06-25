@@ -80,6 +80,7 @@ Public Class FrmGameDisplay
         lcPlayerID = DataAccessClass.PlayerID
 
         DS = DA.Move(lcPlayerID, lcRow, lcColumn)
+        'Test Commit
 
         For Each aRow As DataRow In DS.Tables(0).Rows
             lcMoveMessage = aRow("Message")
